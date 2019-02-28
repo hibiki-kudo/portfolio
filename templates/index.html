@@ -1,0 +1,615 @@
+{% extends 'base.html' %}
+
+{% block content %}
+{% load staticfiles %}
+
+
+<!--/ Intro Skew Star /-->
+<div id="home" class="intro route bg-image" style="background-image: url({% static 'img/new_joudogahama.jpg' %})">
+    <div class="overlay-itro"></div>
+    <div class="intro-content display-table">
+        <div class="table-cell">
+            <div class="container">
+                <!--<p class="display-6 color-d">Hello, world!</p>-->
+                <h1 class="intro-title mb-4">Kudo Hibiki</h1>
+                <p class="intro-subtitle"><span class="text-slider-items">Web Engineer, Scraping and Crawling, Machine Learning</span><strong
+                        class="text-slider"></strong></p>
+                <!-- <p class="pt-3"><a class="btn btn-primary btn js-scroll px-4" href="#about" role="button">Learn More</a></p> -->
+            </div>
+        </div>
+    </div>
+</div>
+<!--/ Intro Skew End /-->
+
+<section id="about" class="about-mf sect-pt4 route">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="title-box text-center">
+                    <h3 class="title-a">About me</h3>
+                    <p class="subtitle-a">
+                        工藤 響について
+                    </p>
+                    <div class="line-mf"></div>
+                </div>
+                <div class="box-shadow-full">
+                    <p></p>
+                    <div class="row">
+                        <!--<div class="col-md-6">-->
+
+                        <div class="row">
+                            <div class="col-sm-3 col-md-3">
+                                <div class="about-img">
+                                    <img src="{% static 'img/IMG_4401.JPG' %}"
+                                         class="img-fluid b-shadow-a img-responsive" alt=""
+                                         style="width: 170px; height: 170px; object-fit:cover; border-radius: 21px; margin:0 auto;display: block;
+">
+                                </div>
+                            </div>
+                            <div class="col-sm-9 col-md-9">
+                                <div class="about-info">
+                                    <p><span class="title-s">Name: </span> <span>工藤 響</span></p>
+                                    <p><span class="title-s">Profile: </span> <span>大学生</span></p>
+                                    <p><span class="title-s">Place of birth: </span> <span>岩手県 八幡平市</span></p>
+                                    <p><span class="title-s">Email: </span> <a class="btn js-scroll"
+                                                                               href="#contact"
+                                                                               style="text-decoration:underline;"><span>kyou9712@gmail.com</span></a>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-md-12 col-sm-12">
+                                <div class="about-me pt-4 pt-md-0 mx-auto">
+                                    <p class="lead">
+                                        &emsp;大学でソフトウェア情報学部で学習しています。現在は竹野研究室に所属しており、研究室の研究分野は情報システム開発に関わる分野を先行しています。しかし、僕個人は特に機械学習に興味があり、機械学習に関わる部分やデータサイエンス等を調査しています。
+                                    </p>
+                                    <p class="lead">
+                                        &emsp;高校までは文系出身でしたが、情報系には特に興味があり理転して大学に入りました。
+                                    </p>
+                                    <p class="lead">
+                                        &emsp;今後はデータサイエンスを学習しつつ、ウェブ開発に携わっていきたいです。
+                                    </p>
+
+                                </div>
+                            </div>
+
+                            <!--</div>-->
+
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--/ Section Services Star /-->
+<!--<section id="hobbies" class="services-mf route paralax-mf bg-image"-->
+<!--style="background-image: url(static/img/load_bike.jpg);">-->
+<section id="hobbies" class="paralax-mf footer-paralax bg-image sect-mt4 route"
+         style="background-image: url(static/img/load_bike.jpg);">
+
+    <div class="overlay-extend"></div>
+    <div class="container">
+        <!--<div class="row">-->
+        <div class="col-sm-12">
+            <div class="title-box text-center">
+                <h3 class="title-a" style="color:#f5f5f5">
+                    Hobbies
+                </h3>
+                <p class="subtitle-a" style="color:#f5f5f5">
+                    響の趣味
+                </p>
+                <div class="line-mf"></div>
+            </div>
+        </div>
+        <!--</div>-->
+        <div class="row">
+            <div class="col-md-4">
+                <div class="service-box">
+                    <div class="service-ico">
+                        <span class="ico-circle"><i class="ion-laptop"></i></span>
+                    </div>
+                    <div class="service-content">
+                        <h2 class="s-title">Programming</h2>
+                        <p class="s-description text-center">
+                            Pythonをメインにスクレイピングや簡単なwebアプリケーションを作成して遊んでいます。<br>Python以外にもSwiftやHTML/CSSも触ったりしたこともあります。
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="service-box">
+                    <div class="service-ico">
+                        <span class="ico-circle"><i class="ion-plane"></i></span>
+                    </div>
+                    <div class="service-content">
+                        <h2 class="s-title">Travel</h2>
+                        <p class="s-description text-center">
+                            自然の風景や青空が好きで、休日は車を走らせてちょっと遠出するといったことをしています。<br>今度はロードバイクを購入して、いつか日本一周してみたいです。
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="service-box">
+                    <div class="service-ico">
+                        <span class="ico-circle"><i class="ion-camera"></i></span>
+                    </div>
+                    <div class="service-content">
+                        <h2 class="s-title">Photography</h2>
+                        <p class="s-description text-center">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni adipisci eaque autem fugiat!
+                            Quia,
+                            provident vitae! Magni
+                            tempora perferendis eum non provident.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="service-box">
+                    <div class="service-ico">
+                        <span class="ico-circle"><i class="ion-android-phone-portrait"></i></span>
+                    </div>
+                    <div class="service-content">
+                        <h2 class="s-title">Responsive Design</h2>
+                        <p class="s-description text-center">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni adipisci eaque autem fugiat!
+                            Quia,
+                            provident vitae! Magni
+                            tempora perferendis eum non provident.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="service-box">
+                    <div class="service-ico">
+                        <span class="ico-circle"><i class="ion-paintbrush"></i></span>
+                    </div>
+                    <div class="service-content">
+                        <h2 class="s-title">Graphic Design</h2>
+                        <p class="s-description text-center">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni adipisci eaque autem fugiat!
+                            Quia,
+                            provident vitae! Magni
+                            tempora perferendis eum non provident.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="service-box">
+                    <div class="service-ico">
+                        <span class="ico-circle"><i class="ion-stats-bars"></i></span>
+                    </div>
+                    <div class="service-content">
+                        <h2 class="s-title">Marketing Services</h2>
+                        <p class="s-description text-center">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni adipisci eaque autem fugiat!
+                            Quia,
+                            provident vitae! Magni
+                            tempora perferendis eum non provident.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--/ Section Services End /-->
+
+<div class="section-counter paralax-mf bg-image" style="background-image: url(static/img/load_bike.jpg)">
+    <div class="overlay-extend"></div>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-3 col-lg-3">
+                <div class="counter-box">
+                    <div class="counter-ico">
+                        <span class="ico-circle"><i class="ion-checkmark-round"></i></span>
+                    </div>
+                    <div class="counter-num">
+                        <p class="counter">450</p>
+                        <span class="counter-text">WORKS COMPLETED</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-3 col-lg-3">
+                <div class="counter-box pt-4 pt-md-0">
+                    <div class="counter-ico">
+                        <span class="ico-circle"><i class="ion-ios-calendar-outline"></i></span>
+                    </div>
+                    <div class="counter-num">
+                        <p class="counter">15</p>
+                        <span class="counter-text">YEARS OF EXPERIENCE</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-3 col-lg-3">
+                <div class="counter-box pt-4 pt-md-0">
+                    <div class="counter-ico">
+                        <span class="ico-circle"><i class="ion-ios-people"></i></span>
+                    </div>
+                    <div class="counter-num">
+                        <p class="counter">550</p>
+                        <span class="counter-text">TOTAL CLIENTS</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-3 col-lg-3">
+                <div class="counter-box pt-4 pt-md-0">
+                    <div class="counter-ico">
+                        <span class="ico-circle"><i class="ion-ribbon-a"></i></span>
+                    </div>
+                    <div class="counter-num">
+                        <p class="counter">36</p>
+                        <span class="counter-text">AWARD WON</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--/ Section Portfolio Star /-->
+<section id="products" class="portfolio-mf sect-pt4 route">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="title-box text-center">
+                    <h3 class="title-a">
+                        Products
+                    </h3>
+                    <p class="subtitle-a">
+                        成果物・経験内容
+                    </p>
+                    <div class="line-mf"></div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="work-box">
+                    <a href="{% static 'img/work-1.jpg' %}" data-lightbox="gallery-mf">
+                        <div class="work-img">
+                            <img src="{% static 'img/work-1.jpg' %}" alt="" class="img-fluid">
+                        </div>
+                        <div class="work-content">
+                            <div class="row">
+                                <div class="col-sm-8">
+                                    <h2 class="w-title">Lorem impsum dolor</h2>
+                                    <div class="w-more">
+                                        <span class="w-ctegory">Web Design</span> / <span
+                                            class="w-date">18 Sep. 2018</span>
+                                    </div>
+                                </div>
+                                <div class="col-sm-4">
+                                    <div class="w-like">
+                                        <span class="ion-ios-plus-outline"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="work-box">
+                    <a href="{% static 'img/work-2.jpg' %}" data-lightbox="gallery-mf">
+                        <div class="work-img">
+                            <img src="{% static 'img/work-2.jpg' %}" alt="" class="img-fluid">
+                        </div>
+                        <div class="work-content">
+                            <div class="row">
+                                <div class="col-sm-8">
+                                    <h2 class="w-title">Loreda Cuno Nere</h2>
+                                    <div class="w-more">
+                                        <span class="w-ctegory">Web Design</span> / <span
+                                            class="w-date">18 Sep. 2018</span>
+                                    </div>
+                                </div>
+                                <div class="col-sm-4">
+                                    <div class="w-like">
+                                        <span class="ion-ios-plus-outline"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="work-box">
+                    <a href="{% static 'img/work-3.jpg' %}" data-lightbox="gallery-mf">
+                        <div class="work-img">
+                            <img src="{% static 'img/work-3.jpg' %}" alt="" class="img-fluid">
+                        </div>
+                        <div class="work-content">
+                            <div class="row">
+                                <div class="col-sm-8">
+                                    <h2 class="w-title">Mavrito Lana Dere</h2>
+                                    <div class="w-more">
+                                        <span class="w-ctegory">Web Design</span> / <span
+                                            class="w-date">18 Sep. 2018</span>
+                                    </div>
+                                </div>
+                                <div class="col-sm-4">
+                                    <div class="w-like">
+                                        <span class="ion-ios-plus-outline"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="work-box">
+                    <a href="{% static 'img/work-4.jpg' %}" data-lightbox="gallery-mf">
+                        <div class="work-img">
+                            <img src="{% static 'img/work-4.jpg' %}" alt="" class="img-fluid">
+                        </div>
+                        <div class="work-content">
+                            <div class="row">
+                                <div class="col-sm-8">
+                                    <h2 class="w-title">Bindo Laro Cado</h2>
+                                    <div class="w-more">
+                                        <span class="w-ctegory">Web Design</span> / <span
+                                            class="w-date">18 Sep. 2018</span>
+                                    </div>
+                                </div>
+                                <div class="col-sm-4">
+                                    <div class="w-like">
+                                        <span class="ion-ios-plus-outline"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="work-box">
+                    <a href="{% static 'img/work-5.jpg' %}" data-lightbox="gallery-mf">
+                        <div class="work-img">
+                            <img src="{% static 'img/work-5.jpg' %}" alt="" class="img-fluid">
+                        </div>
+                        <div class="work-content">
+                            <div class="row">
+                                <div class="col-sm-8">
+                                    <h2 class="w-title">Studio Lena Mado</h2>
+                                    <div class="w-more">
+                                        <span class="w-ctegory">Web Design</span> / <span
+                                            class="w-date">18 Sep. 2018</span>
+                                    </div>
+                                </div>
+                                <div class="col-sm-4">
+                                    <div class="w-like">
+                                        <span class="ion-ios-plus-outline"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="work-box">
+                    <a href="{% static 'img/work-6.jpg' %}" data-lightbox="gallery-mf">
+                        <div class="work-img">
+                            <img src="{% static 'img/work-6.jpg' %}" alt="" class="img-fluid">
+                        </div>
+                        <div class="work-content">
+                            <div class="row">
+                                <div class="col-sm-8">
+                                    <h2 class="w-title">Studio Big Bang</h2>
+                                    <div class="w-more">
+                                        <span class="w-ctegory">Web Design</span> / <span
+                                            class="w-date">18 Sep. 2017</span>
+                                    </div>
+                                </div>
+                                <div class="col-sm-4">
+                                    <div class="w-like">
+                                        <span class="ion-ios-plus-outline"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+<!--/ Section Portfolio End /-->
+
+<!--/ Section Testimonials Star /-->
+<div class="testimonials paralax-mf bg-image" style="background-image: url({% static 'img/ball.jpg' %});">
+    <div class="overlay-extend"></div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div id="testimonial-mf" class="owl-carousel owl-theme">
+                    <div class="testimonial-box">
+                        <div class="author-test">
+                            <img src="{% static 'img/testimonial-2.jpg' %}" alt="" class="rounded-circle b-shadow-a">
+                            <span class="author">Xavi Alonso</span>
+                        </div>
+                        <div class="content-test">
+                            <p class="description lead">
+                                Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Lorem ipsum dolor sit
+                                amet,
+                                consectetur adipiscing elit.
+                            </p>
+                            <span class="comit"><i class="fa fa-quote-right"></i></span>
+                        </div>
+                    </div>
+                    <div class="testimonial-box">
+                        <div class="author-test">
+                            <img src="{% static 'img/testimonial-4.jpg' %}" alt="" class="rounded-circle b-shadow-a">
+                            <span class="author">Marta Socrate</span>
+                        </div>
+                        <div class="content-test">
+                            <p class="description lead">
+                                Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Lorem ipsum dolor sit
+                                amet,
+                                consectetur adipiscing elit.
+                            </p>
+                            <span class="comit"><i class="fa fa-quote-right"></i></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--/ Section Contact-Footer Star /-->
+<section class="paralax-mf footer-paralax bg-image sect-mt4 route"
+         style="background-image: url({% static 'img/ball.jpg' %})">
+    <div class="overlay-extend"></div>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="contact-mf">
+                    <div id="contact" class="box-shadow-full">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="title-box-2 text-center">
+                                    <h5 class="title-a">
+                                        Contact
+                                    </h5>
+                                    <p class="subtitle-a">
+                                        お問い合わせ
+                                    </p>
+                                    <div class="line-mf"></div>
+                                </div>
+
+
+                                <p></p>
+                                <div class="col-md-12">
+                                    <div class="title-box-2 pt-4 pt-md-0">
+                                        <h5 class="title-left">
+                                            Send me
+                                        </h5>
+                                        <p></p>
+                                        <p></p>
+                                        <span>気軽に連絡してください！！</span>
+                                    </div>
+
+                                    <form action="" method="post" role="form" class="contactForm"
+                                          enctype='multipart/form-data'>
+                                        {% csrf_token %}
+                                        <div id="sendmessage">Your message has been sent. Thank you!</div>
+                                        <div id="errormessage">An error occurred.</div>
+                                        <div class="row">
+                                            <div class="col-md-12 mb-3">
+                                                <div class="form-group">
+                                                    <input type="text" name="name" class="form-control" id="name"
+                                                           placeholder="Your Name" data-rule="minlen:4"
+                                                           data-msg="Please enter at least 4 chars" required/>
+                                                    <div class="error-message error-message-name text-danger"
+                                                         style="display:none;">
+                                                        <p class="">入力に不備があります。</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-12 mb-3">
+                                                <div class="form-group">
+                                                    <input type="email" class="form-control" name="email" id="email"
+                                                           placeholder="Your Email" data-rule="email"
+                                                           data-msg="Please enter a valid email" required/>
+                                                    <div class="error-message error-message-email text-danger"
+                                                         style="display:none;">
+                                                        <p class="">入力に不備があります。</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-12 mb-3">
+                                                <div class="form-group">
+                                                    <input type="text" class="form-control" name="subject" id="subject"
+                                                           placeholder="Subject" data-rule="minlen:4"
+                                                           data-msg="Please enter at least 8 chars of subject"
+                                                           required/>
+                                                    <div class="error-message error-message-subject text-danger"
+                                                         style="display:none;">
+                                                        <p class="">入力に不備があります。</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-12 mb-3">
+                                                <div class="form-group">
+                                                    <textarea class="form-control" name="message" id="message" rows="5"
+                                                              data-rule="required"
+                                                              data-msg="Please write something for us"
+                                                              placeholder="Message" required></textarea>
+                                                    <div class="error-message error-message-message text-danger"
+                                                         style="display:none;">
+                                                        <p class="">入力に不備があります。</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-md-12">
+                                                <div id="screenLock" style="visibility: hidden;"></div>
+                                                <button type="button" class="button button-a button-big button-rouded"
+                                                        id="submit-button"
+                                                        style="margin:0 auto;display:block;">
+                                                    Send Message
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row justify-content-center">
+        <div class="socials col-7" style="margin:10px auto;">
+            <div class="text-center">
+                <h5 class="title-a text-white">
+                    Accounts
+                </h5>
+                <p class="subtitle-a text-white" style="font-size: 1.5rem;">
+                    Follow me!!
+                </p>
+            </div>
+            <p></p>
+            <ul class="row">
+                <li class="col" style="margin:10px auto;">
+                    <a class="ico-circle" href="{{ facebook }}"
+                       style="display:table;height:95px;width:95px;margin:0 auto;" target="_blank" ;>
+                        <i class="ion-social-facebook" style="display:table-cell;font-size:2.5em;text-align:center;
+                                vertical-align: middle;"></i>
+                    </a>
+                </li>
+                <li class="col" style="margin:10px auto;">
+                    <a class="ico-circle" href="{{ twitter }}"
+                       style="display:table;height:95px;width:95px;margin:0 auto;" target="_blank" ;>
+                        <i class="ion-social-twitter" style="display:table-cell;font-size:2.5em;text-align:center;
+                                vertical-align: middle;"></i>
+                    </a>
+                </li>
+                <li class="col" style="margin:10px auto;">
+                    <a class="ico-circle" href="{{ github }}"
+                       style="display:table;height:95px;width:95px;margin:0 auto;" target="_blank" ;>
+                        <i class="ion-social-github" style="display:table-cell;font-size:2.5em;text-align:center;
+                                vertical-align: middle;"></i>
+                    </a>
+                </li>
+            </ul>
+            <div>&emsp;</div>
+            <p class="text-white text-center" style="font-size:20px;font-weight:bold;">
+                よろしくおねがいします！！！</p>
+        </div>
+    </div>
+</section>
+{%endblock%}
