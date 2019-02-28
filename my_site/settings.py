@@ -22,7 +22,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = 's+njfrqv$txe%=uyj3l%#i4ivr%movtre(9yli5avph03q1v9q'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ["*"]
 
@@ -46,6 +46,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'whitenoise.middleware.WhiteNoiseMiddleware',
 ]
 
 ROOT_URLCONF = 'my_site.urls'
@@ -112,13 +113,14 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.11/howto/static-files/
 # STATIC_ROOT = os.path.join(BASE_DIR, 'assets')
-# STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+STATIC_ROOT = 'staticfiles'
 
 STATICFILES_DIRS = (
     os.path.join(BASE_DIR, "static"),
 )
 
 STATIC_URL = '/static/'
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
 # CSRF_COOKIE_NAME = "aaaa"
 
@@ -126,5 +128,5 @@ EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_PORT = 587
 EMAIL_HOST_USER = 'kyou9712@gmail.com'
-EMAIL_HOST_PASSWORD = 'gdsrakhlmepeoclo'
+EMAIL_HOST_PASSWORD = os.environ["MAIL_PASSWORD"]
 EMAIL_USE_TLS = True
