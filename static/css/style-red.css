@@ -50,6 +50,10 @@ a:hover {
   color: #4e4e4e;
 }
 
+.wrap {
+	overflow: hidden;
+}
+
 .box-shadow,
 .paralax-mf,
 .service-box,
