@@ -93,20 +93,7 @@ a:hover {
   background-position: center center;
 }
 
-.bg-image-responsive{
-/*
-  background: -moz-linear-gradient(left, #162860, #292F42) fixed;
-  background: -webkit-linear-gradient(left, #162860, #292F42) fixed;
-  background: linear-gradient(to right, #162860, #292F42) fixed;
-  */
--webkit-background-size: 2000px auto;
--moz-background-size: 2000px auto;
--ms-background-size: 2000px auto;
--o-background-size: 2000px auto;
-background-size: 2000px auto;
-background-position: left top;
-background-repeat: no-repeat;
-  }
+
 
 
 div.overlay-extend{
@@ -1297,6 +1284,20 @@ footer .credits a {
 @media (max-width: 768px) {
   .back-to-top {
     bottom: 15px;
+  }
+  .bg-image{
+/*
+  background: -moz-linear-gradient(left, #162860, #292F42) fixed;
+  background: -webkit-linear-gradient(left, #162860, #292F42) fixed;
+  background: linear-gradient(to right, #162860, #292F42) fixed;
+  */
+-webkit-background-size: 2000px auto;
+-moz-background-size: 2000px auto;
+-ms-background-size: 2000px auto;
+-o-background-size: 2000px auto;
+background-size: 2000px auto;
+background-position: left top;
+background-repeat: no-repeat;
   }
 
 }
