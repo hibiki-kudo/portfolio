@@ -99,12 +99,12 @@ a:hover {
   background: -webkit-linear-gradient(left, #162860, #292F42) fixed;
   background: linear-gradient(to right, #162860, #292F42) fixed;
   */
--webkit-background-size: 2500px auto;
--moz-background-size: 2500px auto;
--ms-background-size: 2500px auto;
--o-background-size: 2500px auto;
-background-size: 2500px auto;
-background-position: center center;
+-webkit-background-size: 2000px auto;
+-moz-background-size: 2000px auto;
+-ms-background-size: 2000px auto;
+-o-background-size: 2000px auto;
+background-size: 2000px auto;
+background-position: left top;
 background-repeat: no-repeat;
   }
 
