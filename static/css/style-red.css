@@ -96,6 +96,7 @@ a:hover {
 div.overlay-extend{
   background-color: rgba(0,0,0,0.6);
   background-size: contain;
+  background-repeat: no-repeat;
 }
 
 .overlay-extend {
@@ -628,6 +629,7 @@ div.overlay-extend{
   width: 100%;
   opacity: .9;
   background-size: contain;
+  background-repeat: no-repeat;
 }
 
 .intro .intro-title {
