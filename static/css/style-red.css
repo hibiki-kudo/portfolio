@@ -95,7 +95,7 @@ a:hover {
 
 div.overlay-extend{
   background-color: rgba(0,0,0,0.6);
-  background-size: cover;
+  background-size: contain;
 }
 
 .overlay-extend {
@@ -627,7 +627,7 @@ div.overlay-extend{
   height: 100%;
   width: 100%;
   opacity: .9;
-  background-size: cover;
+  background-size: contain;
 }
 
 .intro .intro-title {
