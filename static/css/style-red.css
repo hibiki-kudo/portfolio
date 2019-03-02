@@ -606,6 +606,7 @@ div.overlay-extend{
   height: 100vh;
   position: relative;
   color: #fff;
+  background-size:cover;
 }
 
 .intro .intro-content {
@@ -616,6 +617,7 @@ div.overlay-extend{
 .intro .overlay-itro {
   background-color: rgba(0, 0, 0, 0.6);
   position: absolute;
+  object-fit: contain;
   top: 0;
   left: 0px;
   padding: 0;
@@ -754,15 +756,24 @@ div.overlay-extend{
   text-align: center;
 }
 
+
+.counter-box .ico-circle:hover {
+  transition: all 500ms ease;
+  color: #be3131;
+  box-shadow: 0 0 0 3px #fff;
+  background-color: #fff;
+}
+
 .counter-ico {
   margin-bottom: 1rem;
 }
 
 .counter-ico .ico-circle {
-  height: 60px;
-  width: 60px;
+  height: 100px;
+  width: 100px;
   line-height: 1.8;
   box-shadow: 0 0 0 10px #f5dcdc;
+  transition: all 500ms ease;
 }
 
 .counter-num .counter {

@@ -21,6 +21,7 @@
     <link href="{% static 'lib/ionicons/css/ionicons.min.css' %}" rel="stylesheet">
     <link href="{% static 'lib/owlcarousel/assets/owl.carousel.min.css' %}" rel="stylesheet">
     <link href="{% static 'lib/lightbox/css/lightbox.min.css' %}" rel="stylesheet">
+    <link href="{% static 'css/jquery.circliful.css' %}" rel="stylesheet" type="text/css"/>
 
     <!-- Main Stylesheet File -->
     <link href="{% static 'css/style-red.css' %}" rel="stylesheet">
@@ -61,7 +62,7 @@
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link js-scroll" href="#contact">Contact</a>
+                    <a class="nav-link js-scroll" href="">Contact</a>
                 </li>
             </ul>
         </div>
@@ -101,6 +102,7 @@
 <script src="{% static 'lib/lightbox/js/lightbox.min.js' %}"></script>
 <script src="{% static 'lib/typed/typed.min.js' %}"></script>
 <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+<script src="{% static 'js/jquery.circliful.min.js' %}"></script>
 
 <!-- Template Main Javascript File -->
 <script src="{% static 'js/main.js' %}"></script>
@@ -213,6 +215,9 @@ $('#submit-button').on('click', function() {
   }
 });
 
+$(document).ready(function(){
+    $('.myStat').circliful();
+});
 
 
 
