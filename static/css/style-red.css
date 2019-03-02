@@ -606,7 +606,6 @@ div.overlay-extend{
   height: 100vh;
   position: relative;
   color: #fff;
-  background-size:cover;
 }
 
 .intro .intro-content {
@@ -617,7 +616,8 @@ div.overlay-extend{
 .intro .overlay-itro {
   background-color: rgba(0, 0, 0, 0.6);
   position: absolute;
-  object-fit: contain;
+  background-position: left top;
+background-size: auto 100vh;
   top: 0;
   left: 0px;
   padding: 0;
