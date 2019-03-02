@@ -93,6 +93,12 @@ a:hover {
   background-position: center center;
 }
 
+.bg-image-responsive{
+  background: -moz-linear-gradient(left, #FFC778, #FFF);
+  background: -webkit-linear-gradient(left, #FFC778, #FFF);
+  background: linear-gradient(to right, #FFC778, #FFF);
+  }
+
 
 div.overlay-extend{
   background-color: rgba(0,0,0,0.6);
@@ -1283,7 +1289,5 @@ footer .credits a {
   .back-to-top {
     bottom: 15px;
   }
-  .bg-image{
-  background: #;
-  }
+
 }
