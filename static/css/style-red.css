@@ -607,7 +607,6 @@ div.overlay-extend{
 ======================================*/
 
 .intro {
--webkit-backface-visibility: hidden;
   height: 100vh;
   position: relative;
   color: #fff;
@@ -627,6 +626,7 @@ div.overlay-extend{
   height: 100%;
   width: 100%;
   opacity: .9;
+  background-size: contain;
 }
 
 .intro .intro-title {
