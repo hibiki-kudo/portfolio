@@ -91,16 +91,21 @@ a:hover {
   background-attachment: fixed;
   background-size: cover;
   background-position: center center;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  -ms-background-size: cover;
 }
 
 .bg-image-responsive{
+/*
   background: -moz-linear-gradient(left, #162860, #292F42) fixed;
   background: -webkit-linear-gradient(left, #162860, #292F42) fixed;
   background: linear-gradient(to right, #162860, #292F42) fixed;
+  */
+-webkit-background-size: 320px auto;
+-moz-background-size: 320px auto;
+-ms-background-size: 320px auto;
+-o-background-size: 320px auto;
+background-size: 320px auto;
+background-position: left top;
+background-repeat: no-repeat;
   }
 
 
