@@ -92,7 +92,15 @@ a:hover {
   background-size: cover;
   background-position: center center;
 }
+@media only screen and (-webkit-min-device-pixel-ratio: 2) {
+.bg-image {
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center center;
 
+}
+}
 div.overlay-extend{
   background-color: rgba(0,0,0,0.6);
 }
