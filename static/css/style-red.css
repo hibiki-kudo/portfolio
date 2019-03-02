@@ -1283,7 +1283,7 @@ footer .credits a {
   .back-to-top {
     bottom: 15px;
   }
-    .bg-image{
-  background-size: auto;
+  .bg-image{
+  background-size: contain;
   }
 }
