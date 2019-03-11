@@ -1294,7 +1294,6 @@ footer .credits a {
 -ms-background-size: 2000px auto;
 -o-background-size: 2000px auto;
 background-size: 2000px auto;
-background-position: left top;
 background-repeat: no-repeat;
   }
 
@@ -1308,6 +1307,7 @@ background-repeat: no-repeat;
   border:solid 5px #fff;
   margin-top:10px;
 }
+
 .prof-contact:hover{
   color:#000;
   text-decoration:none;
