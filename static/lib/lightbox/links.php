@@ -1,6 +1,6 @@
 <?php
   $links = array(
-    'css' => 'lib/lightbox/css/lightbox.min.css',
-    'js' => 'lib/lightbox/js/lightbox.min.js'
+    'css' => 'static/lib/lightbox/css/lightbox.min.css',
+    'js' => 'static/lib/lightbox/js/lightbox.min.js'
   );
 ?>

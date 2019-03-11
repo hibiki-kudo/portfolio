@@ -93,9 +93,6 @@ a:hover {
   background-position: center center;
 }
 
-
-
-
 div.overlay-extend{
   background-color: rgba(0,0,0,0.6);
 }
@@ -1300,4 +1297,19 @@ background-position: left top;
 background-repeat: no-repeat;
   }
 
+}
+
+.prof-contact{
+  padding:10px;
+  color:#fff;
+  text-decoration:none;
+  background-color:#000;
+  border:solid 5px #fff;
+  margin-top:10px;
+}
+.prof-contact:hover{
+  color:#000;
+  text-decoration:none;
+  background-color:#fff;
+  border:solid 5px #000;
 }

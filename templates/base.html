@@ -100,9 +100,9 @@
     <script src="{% static 'lib/counterup/jquery.counterup.js' %}"></script>
     <script src="{% static 'lib/owlcarousel/owl.carousel.min.js' %}"></script>
     <script src="{% static 'lib/lightbox/js/lightbox.min.js' %}"></script>
+    <script src="{% static 'lib/lightbox/js/lightbox.js' %}"></script>
     <script src="{% static 'lib/typed/typed.min.js' %}"></script>
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
-    <script src="{% static 'js/jquery.circliful.min.js' %}"></script>
 
     <!-- Template Main Javascript File -->
     <script src="{% static 'js/main.js' %}"></script>
@@ -218,12 +218,16 @@ $('#submit-button').on('click', function() {
 
 $(document).ready(function(){
     var windowWidth = $(window).width();
+
+
+
     if(navigator.userAgent.indexOf('iPhone') > 0 || navigator.userAgent.indexOf('iPad') == 0 || navigator.userAgent.indexOf('iPod') > 0 || navigator.userAgent.indexOf('Android') > 0){
         <!--$(".bg-image").removeAttr('style');-->
         <!--$(".bg-image").addClass('bg-image-responsive');-->
         <!--$(".bg-image-responsive").removeClass('bg-image');-->
     }
 });
+
 
 
 
