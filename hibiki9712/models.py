@@ -12,6 +12,6 @@ class MySite(models.Model):
         # send_mail("ご連絡ありがとうございます", confirm_message, email_address, my_address)
 
         # 自分用に送信
-        message = f"from:{email_address}\n{name} さんから送られたメールです。 \n================================================\n{message}\n================================================\n from django project"
+        message = f"from:{email_address}\n{name} さんから送られたメールです。 \n===========================\n{message}\n===========================\n from django project"
         my_address = ['kyou9712@gmail.com']
         send_mail(subject, message, email_address, my_address)
