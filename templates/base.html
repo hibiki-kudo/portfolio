@@ -219,15 +219,17 @@ $('#submit-button').on('click', function() {
 $(document).ready(function(){
     var windowWidth = $(window).width();
 
-    if(windowWidth <= 768){
-        $("section.bg-image").removeAttr('style');
-    }
-
-    <!--if(navigator.userAgent.indexOf('iPhone') > 0 || navigator.userAgent.indexOf('iPad') == 0 || navigator.userAgent.indexOf('iPod') > 0 || navigator.userAgent.indexOf('Android') > 0){-->
-        <!--$(".bg-image").removeAttr('style');-->
-        <!--$(".bg-image").addClass('bg-image-responsive');-->
-        <!--$(".bg-image-responsive").removeClass('bg-image');-->
+    <!--if(windowWidth <= 768){-->
+        <!--$("section.bg-image").removeAttr('style');-->
+        <!--$("section.bg-image").addClass('bg-image-res');-->
+        <!--$(".overlay-extend").addClass('overlay-extend-res');-->
     <!--}-->
+
+    if(navigator.userAgent.indexOf('iPhone') > 0 || navigator.userAgent.indexOf('iPad') > 0 || navigator.userAgent.indexOf('iPod') > 0 || navigator.userAgent.indexOf('Android') > 0){
+        $("section.bg-image").removeAttr('style');
+        $("section.bg-image").addClass('bg-image-res');
+        $(".overlay-extend").addClass('overlay-extend-res');
+    }
 });
 
 
