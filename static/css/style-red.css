@@ -1281,20 +1281,20 @@ footer .credits a {
     bottom: 15px;
   }
   .bg-image{
-    /*
     -webkit-background-size: 3000px auto;
     -moz-background-size: 3000px auto;
     -ms-background-size: 3000px auto;
     -o-background-size: 3000px auto;
     background-size: 3000px auto;
 
+    background-position: left top;
+    background-repeat: no-repeat;
+/*
     -webkit-background-size: 15000px auto;
     -moz-background-size: 15000px auto;
     -ms-background-size: 15000px auto;
     -o-background-size: 15000px auto;
     background-size: 15000px auto;
-    background-position: left top;
-    background-repeat: no-repeat;
 */
 
     background-color: #434343;
