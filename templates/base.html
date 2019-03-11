@@ -231,10 +231,8 @@ $(window).scroll(function(){
     const windowHeight = $(window).height();
     const windowTop = $(window).scrollTop();
     const isAnimate = $('.products-box').data('animate');
-    console.log(windowTop);
     $("#products").each(function(){
         const targetPosition = $(this).offset().top;
-        console.log(targetPosition - windowHeight);
         if(windowTop > targetPosition - windowHeight + 300){
             $(".products-box").fadeIn(300);
             $(".products-box").addClass(isAnimate);
