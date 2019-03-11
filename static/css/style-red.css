@@ -1281,20 +1281,28 @@ footer .credits a {
     bottom: 15px;
   }
   .bg-image{
-  /*
+    /*
     -webkit-background-size: 3000px auto;
     -moz-background-size: 3000px auto;
     -ms-background-size: 3000px auto;
     -o-background-size: 3000px auto;
     background-size: 3000px auto;
+    */
+    -webkit-background-size: contain;
+    -moz-background-size: contain;
+    -ms-background-size: contain;
+    -o-background-size: contain;
+    background-size: contain;
     background-position: left top;
     background-repeat: no-repeat;
-    */
-    background-image:url("");
+
+    /*
     background-color: #434343;
     background-image:linear-gradient(#5480D3, #3256A7);
+    */
 
   }
+  /*
   .overlay-extend{
     background-color: transparent;
     background-image:
@@ -1314,7 +1322,7 @@ footer .credits a {
     height:100%;
   background-size:50px 50px;
   }
-
+*/
 }
 
 .prof-contact{
