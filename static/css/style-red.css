@@ -1289,12 +1289,18 @@ footer .credits a {
   background: -webkit-linear-gradient(left, #162860, #292F42) fixed;
   background: linear-gradient(to right, #162860, #292F42) fixed;
   */
--webkit-background-size: 2000px auto;
--moz-background-size: 2000px auto;
--ms-background-size: 2000px auto;
--o-background-size: 2000px auto;
-background-size: 2000px auto;
-background-repeat: no-repeat;
+    -webkit-background-size: 2000px auto;
+    -moz-background-size: 2000px auto;
+    -ms-background-size: 2000px auto;
+    -o-background-size: 2000px auto;
+    background-size: 2000px auto;
+    background-position: left top;
+    background-repeat: no-repeat;
+    margin-left: -200px;
+    margin-right: -200px;
+    padding-left: 200px;
+    padding-right: 200px;
+
   }
 
 }
