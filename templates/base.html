@@ -21,6 +21,7 @@
     <link href="{% static 'lib/ionicons/css/ionicons.min.css' %}" rel="stylesheet">
     <link href="{% static 'lib/owlcarousel/assets/owl.carousel.min.css' %}" rel="stylesheet">
     <link href="{% static 'lib/lightbox/css/lightbox.min.css' %}" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css" rel="stylesheet">
 
     <!-- Main Stylesheet File -->
     <link href="{% static 'css/style-red.css' %}" rel="stylesheet">
@@ -219,17 +220,26 @@ $('#submit-button').on('click', function() {
 $(document).ready(function(){
     var windowWidth = $(window).width();
 
-    <!--if(windowWidth <= 768){-->
-        <!--$("section.bg-image").removeAttr('style');-->
-        <!--$("section.bg-image").addClass('bg-image-res');-->
-        <!--$(".overlay-extend").addClass('overlay-extend-res');-->
-    <!--}-->
-
     if(navigator.userAgent.indexOf('iPhone') > 0 || navigator.userAgent.indexOf('iPad') > 0 || navigator.userAgent.indexOf('iPod') > 0 || navigator.userAgent.indexOf('Android') > 0){
         $("section.bg-image").removeAttr('style');
         $("section.bg-image").addClass('bg-image-res');
         $(".overlay-extend").addClass('overlay-extend-res');
     }
+});
+
+$(window).scroll(function(){
+    const windowHeight = $(window).height();
+    const windowTop = $(window).scrollTop();
+    const isAnimate = $('.products-box').data('animate');
+    console.log(windowTop);
+    $("#products").each(function(){
+        const targetPosition = $(this).offset().top;
+        console.log(targetPosition - windowHeight);
+        if(windowTop > targetPosition - windowHeight + 300){
+            $(".products-box").fadeIn(300);
+            $(".products-box").addClass(isAnimate);
+        }
+    });
 });
 
     </script>
