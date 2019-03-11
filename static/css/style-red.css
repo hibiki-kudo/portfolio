@@ -1281,11 +1281,11 @@ footer .credits a {
     bottom: 15px;
   }
   .bg-image{
-    -webkit-background-size: 1500px auto;
-    -moz-background-size: 1500px auto;
-    -ms-background-size: 1500px auto;
-    -o-background-size: 1500px auto;
-    background-size: 1500px auto;
+    -webkit-background-size: 2000px auto;
+    -moz-background-size: 2000px auto;
+    -ms-background-size: 2000px auto;
+    -o-background-size: 2000px auto;
+    background-size: 2000px auto;
 
     background-position: left top;
     background-repeat: no-repeat;
