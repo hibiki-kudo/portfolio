@@ -14,7 +14,7 @@ def index(request):
     context = {
         "facebook": "https://www.facebook.com/profile.php?id=100012278737413",
         "twitter": "https://twitter.com/hibikikkk_9712",
-        "github": "https://github.com//hibikikkk",
+        "github": "https://github.com//hibiki-kudo",
         "mail_url": "/send_mail"
     }
     threading.Thread(target=logging_access_info, args=(request,)).start()
