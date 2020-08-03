@@ -1,7 +1,12 @@
+import threading
+
 from django.shortcuts import render
 from django.http import HttpResponse, Http404
 from django.views.decorators.csrf import csrf_protect
+import requests
+from ipware import get_client_ip
 
+from my_site.settings import GAS_LOGGING_URL
 from .models import MySite
 
 
@@ -13,6 +18,7 @@ def index(request):
         "github": "https://github.com//hibikikkk",
         "mail_url": "/send_mail"
     }
+    threading.Thread(target=logging_access_info, args=(request,)).start()
     return render(request, "index.html", context)
 
 
@@ -39,3 +45,8 @@ def send_mail(request):
             raise Http404
 
     raise Http404
+
+
+def logging_access_info(request):
+    client_addr, _ = get_client_ip(request)
+    requests.get(GAS_LOGGING_URL, params={"access_log": str(client_addr) + str(request.headers)})
