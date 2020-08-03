@@ -4,7 +4,6 @@ from django.shortcuts import render
 from django.http import HttpResponse, Http404
 from django.views.decorators.csrf import csrf_protect
 import requests
-from ipware import get_client_ip
 
 from my_site.settings import GAS_LOGGING_URL
 from .models import MySite
@@ -48,5 +47,4 @@ def send_mail(request):
 
 
 def logging_access_info(request):
-    client_addr, _ = get_client_ip(request)
-    requests.get(GAS_LOGGING_URL, params={"access_log": str(client_addr) + str(request.headers)})
+    requests.get(GAS_LOGGING_URL, params={"access_log": str(request.headers)})
