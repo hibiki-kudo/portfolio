@@ -17,8 +17,7 @@ def index(request):
         "github": "https://github.com//hibikikkk",
         "mail_url": "/send_mail"
     }
-    logging_access_info(request)
-    # threading.Thread(target=logging_access_info, args=(request,)).start()
+    threading.Thread(target=logging_access_info, args=(request,)).start()
     return render(request, "index.html", context)
 
 
@@ -48,4 +47,4 @@ def send_mail(request):
 
 
 def logging_access_info(request):
-    requests.get(GAS_LOGGING_URL, params={"access_log": str(request.headers)})
+    requests.get(GAS_LOGGING_URL, params={"access_log": str(request.META)})
