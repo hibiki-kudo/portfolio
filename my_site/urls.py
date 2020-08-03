@@ -16,7 +16,12 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 
+from my_site.settings import ADMIN_ENABLED
+
 urlpatterns = [
-    path('admin/', admin.site.urls),
+
     path('', include('hibiki9712.urls')),
 ]
+
+if ADMIN_ENABLED:
+    urlpatterns += [path('admin/', admin.site.urls)]

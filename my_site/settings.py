@@ -130,3 +130,19 @@ EMAIL_PORT = 587
 EMAIL_HOST_USER = 'kyou9712@gmail.com'
 EMAIL_HOST_PASSWORD = os.environ.get("MAIL_PASSWORD") or ""
 EMAIL_USE_TLS = True
+
+GAS_LOGGING_URL = "https://script.google.com/macros/s/AKfycbypbl5oL5VtRr-kSMbfC1D5WSxXjRR_IdM5PFEDuDzolkUEtpk9/exec"
+
+ADMIN_ENABLED = False
+
+IPWARE_META_PRECEDENCE_ORDER = (
+    'HTTP_X_FORWARDED_FOR', 'X_FORWARDED_FOR',  # <client>, <proxy1>, <proxy2>
+    'HTTP_CLIENT_IP',
+    'HTTP_X_REAL_IP',
+    'HTTP_X_FORWARDED',
+    'HTTP_X_CLUSTER_CLIENT_IP',
+    'HTTP_FORWARDED_FOR',
+    'HTTP_FORWARDED',
+    'HTTP_VIA',
+    'REMOTE_ADDR',
+)
