@@ -11,6 +11,7 @@ django = "*"
 gunicorn = "*"
 django-heroku = "*"
 whitenoise = "*"
+django-ipware = "*"
 
 [dev-packages]
 
