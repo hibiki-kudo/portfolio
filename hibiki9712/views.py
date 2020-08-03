@@ -17,7 +17,8 @@ def index(request):
         "github": "https://github.com//hibikikkk",
         "mail_url": "/send_mail"
     }
-    threading.Thread(target=logging_access_info, args=(request,)).start()
+    logging_access_info(request)
+    # threading.Thread(target=logging_access_info, args=(request,)).start()
     return render(request, "index.html", context)
 
 
