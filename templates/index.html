@@ -1,480 +1,473 @@
 {% extends 'base.html' %}
 
 {% block content %}
-{% load static %}
+    {% load static %}
 
 
-<!--/ Intro Skew Star /-->
-<div id="home" class="intro route bg-image"
-     style="background-image: url({% static 'img/new_joudogahama.jpg' %})">
-    <div class="overlay-itro"></div>
-    <div class="intro-content display-table">
-        <div class="table-cell">
-            <div class="container">
-                <h1 class="intro-title mb-4">Kudo Hibiki</h1>
-                <p class="intro-subtitle"><span
-                        class="text-slider-items">Welcome to Hibiki's Portfolio, Web Engineer / Python</span><strong
-                        class="text-slider"></strong></p>
+    <!--/ Intro Skew Star /-->
+    <div id="home" class="intro route bg-image"
+         style="background-image: url({% static 'img/new_joudogahama.jpg' %})">
+        <div class="overlay-itro"></div>
+        <div class="intro-content display-table">
+            <div class="table-cell">
+                <div class="container">
+                    <h1 class="intro-title mb-4">Kudo Hibiki</h1>
+                    <p class="intro-subtitle"><span
+                            class="text-slider-items">Welcome to Hibiki's Portfolio, Web Engineer / Python</span><strong
+                            class="text-slider"></strong></p>
+                </div>
             </div>
         </div>
     </div>
-</div>
-<!--/ Intro Skew End /-->
+    <!--/ Intro Skew End /-->
 
-<section id="about" class="about-mf sect-pt4 route">
+    <section id="about" class="about-mf sect-pt4 route">
 
-    <div class="container">
-        <div class="row">
-            <div class="col-sm-12">
-                <div class="title-box text-center">
-                    <h3 class="title-a">About me</h3>
-                    <p class="subtitle-a">
-                        工藤 響について
-                    </p>
-                    <div class="line-mf"></div>
-                </div>
-                <div class="box-shadow-full">
-                    <p></p>
-                    <div class="row">
-                        <div class="row col-md-6">
-                            <div class="col-12 about-img">
-                                <div class="about-img">
-                                    <img src="{% static 'img/IMG_4401.JPG' %}"
-                                         class="img-fluid b-shadow-a img-responsive" alt=""
-                                         style="width: 200px; height: 200px; object-fit:cover; border-radius: 21px; margin:0 auto;display: block; border:solid 10px #be3131;
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="title-box text-center">
+                        <h3 class="title-a">About me</h3>
+                        <p class="subtitle-a">
+                            工藤 響について
+                        </p>
+                        <div class="line-mf"></div>
+                    </div>
+                    <div class="box-shadow-full">
+                        <p></p>
+                        <div class="row">
+                            <div class="row col-lg-6">
+                                <div class="col-12 about-img">
+                                    <div class="about-img">
+                                        <img src="{% static 'img/IMG_4401.JPG' %}"
+                                             class="img-fluid b-shadow-a img-responsive" alt=""
+                                             style="width: 200px; height: 200px; object-fit:cover; border-radius: 21px; margin:0 auto;display: block; border:solid 10px #be3131;
 "/>
+                                    </div>
+                                </div>
+                                <div class="col-12 abount-profile">
+                                    <div class="about-info text-center">
+                                        <p style="font-size:1.2rem;"><span class="text-bold display-5">工藤 響</span>
+                                            <!--<p style="font-size:1rem;margin-bottom:32px;"> <span>Engineer</span></p></p>-->
+
+                                        <p style="font-size:1.2rem;margin-bottom:32px;"><a
+                                                class="prof-contact js-scroll"
+                                                href="#contact">CONTACT</a>
+                                        </p>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="col-12 abount-profile">
-                                <div class="about-info text-center">
-                                    <p style="font-size:1.2rem;"><span class="text-bold display-5">工藤 響</span>
-                                        <!--<p style="font-size:1rem;margin-bottom:32px;"> <span>Engineer</span></p></p>-->
-
-                                    <p style="font-size:1.2rem;margin-bottom:32px;"><a class="prof-contact js-scroll"
-                                                                                       href="#contact">CONTACT</a>
+                            <div class="col-lg-6">
+                                <div class="about-me pt-4 pt-md-0 mx-auto">
+                                    <p class="lead">
+                                        &emsp;岩手出身で岩手の大自然に囲まれて生きてきました。小学校はスキー、中学高校までは野球をやってました。現在は、ガリガリの自分の体を変えるために定期的にランニングや筋トレをやろうとしています。(やっているとは言っていない)
+                                    </p>
+                                    <p class="lead">
+                                        &emsp;プログラミングは地元のイベントの参加をきっかけに開発の魅力に惹かれました！ゼロから形になっていく様子や、見込みを立ててそれが本当に正しく動作した時などの喜びや面白さはなんとも言えないものがありますよね！現在はインターンをしながら実際の開発現場で働かせてもらっています。
+                                    </p>
+                                    <p class="lead">
+                                        &emsp;これまでバックエンドメインで実装することが多く、フロントエンド側の知識が抜け漏れを感じる機会が多くなってきました。今後はバックエンドをやりつつ、フロントエンド側の知識や経験を積んでいきたいなぁと思っています。
                                     </p>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-6">
-                            <div class="about-me pt-4 pt-md-0 mx-auto">
-                                <p class="lead">
-                                    &emsp;岩手の大学でソフトウェア情報学部で在学中です。岩手の大自然に囲まれて生きてきました。小学校はスキー、中学高校までは野球をやってました。ただ、大学に入ってからスポーツはやっていないので体は鈍りっぱなしです笑
-                                </p>
-                                <p class="lead">
-                                    &emsp;プログラミングについてはPythonに出会ってから、プログラミングの面白さを知りました。特にPythonの書き方であったり、スクリプト言語の扱いやすさであったりそういった部分の自分の考えを簡単に形にできるといった点に惹かれました。今後も学習していきたいです！
-                                </p>
-                                <p class="lead">
-                                    &emsp;今は一年間休学してIT系のインターンシップをしたりアルバイトをしたりして経験をしたいと思っています。
-                                </p>
-
-                            </div>
-                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
-<!--/ Section Services Star /-->
-<!--<section id="hobbies" class="services-mf route paralax-mf bg-image"-->
-<!--style="background-image: url(static/img/load_bike.jpg);">-->
-<section id="hobbies" class="paralax-mf bg-image sect-mt4 route"
-         style="background-image: url({% static 'img/load_bike.jpg' %});">
+    <!--/ Section Services Star /-->
+    <!--<section id="hobbies" class="services-mf route paralax-mf bg-image"-->
+    <!--style="background-image: url(static/img/load_bike.jpg);">-->
+    <section id="hobbies" class="paralax-mf bg-image sect-mt4 route"
+             style="background-image: url({% static 'img/load_bike.jpg' %});">
 
-    <div class="overlay-extend"></div>
-    <!--<div class="container">-->
-    <!--<div class="row">-->
-    <div class="col-sm-12">
-        <div class="title-box text-center">
-            <h3 class="title-a" style="color:#f5f5f5">
-                Hobbies
-            </h3>
-            <p class="subtitle-a" style="color:#f5f5f5">
-                響の趣味
-            </p>
-            <div class="line-mf"></div>
+        <div class="overlay-extend"></div>
+        <!--<div class="container">-->
+        <!--<div class="row">-->
+        <div class="col-sm-12">
+            <div class="title-box text-center">
+                <h3 class="title-a" style="color:#f5f5f5">
+                    Hobbies
+                </h3>
+                <p class="subtitle-a" style="color:#f5f5f5">
+                    響の趣味
+                </p>
+                <div class="line-mf"></div>
+            </div>
+            <!--</div>-->
         </div>
-        <!--</div>-->
-    </div>
-    <div class="row col-sm-11" style="display:flex; margin: 0 auto;">
-        <div class="col-md-4">
-            <div class="service-box">
-                <div class="service-ico">
-                    <span class="ico-circle"><i class="ion-ios-baseball"></i></span>
-                </div>
-                <div class="service-content">
-                    <h2 class="s-title">Baseball</h2>
-                    <p class="s-description text-center">
-                        時々友人とキャッチボールしたりバッティングセンター行ったりして遊んでます。ただ、高校の時のように体が動かなくなっているので程々にって感じです。
-                    </p>
+        <div class="row col-sm-11" style="display:flex; margin: 0 auto;">
+            <div class="col-lg-4">
+                <div class="service-box">
+                    <div class="service-ico">
+                        <span class="ico-circle"><i class="ion-ios-baseball"></i></span>
+                    </div>
+                    <div class="service-content">
+                        <h2 class="s-title">Baseball</h2>
+                        <p class="s-description text-center">
+                            時々友人とキャッチボールしたりバッティングセンター行ったりして遊んでます。遠投100メートルを目指しています！笑
+                        </p>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="col-md-4">
-            <div class="service-box">
-                <div class="service-ico">
-                    <span class="ico-circle"><i class="ion-plane"></i></span>
-                </div>
-                <div class="service-content">
-                    <h2 class="s-title">Travel</h2>
-                    <p class="s-description text-center">
-                        自然の風景や青空が好きで、休日は車を走らせてちょっと遠出するといったことをしています。今度はロードバイクを購入して、いつか日本一周してみたいです。
-                    </p>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-4">
-            <div class="service-box">
-                <div class="service-ico">
-                    <span class="ico-circle"><i class="ion-social-youtube"></i></span>
-                </div>
-                <div class="service-content">
-                    <h2 class="s-title">Videos</h2>
-                    <p class="s-description text-center">
-                        毎日、動画を見ています。ほんとに毎日欠かさず見ています。カテゴリーにこだわりはなく、気になったら全部見てしまって1日が過ぎてしまうこともあります。
-                    </p>
+            <div class="col-lg-4">
+                <div class="service-box">
+                    <div class="service-ico">
+                        <span class="ico-circle"><i class="ion-plane"></i></span>
+                    </div>
+                    <div class="service-content">
+                        <h2 class="s-title">Travel</h2>
+                        <p class="s-description text-center">
+                            自然の風景や青空が好きで、車から見える景色が変わっていく感じに惹かれたりします。車と時間が取れたら日本一周とかしてみたいですね〜
+                        </p>
+                    </div>
                 </div>
             </div>
-        </div>
+            <div class="col-lg-4">
+                <div class="service-box">
+                    <div class="service-ico">
+                        <span class="ico-circle"><i class="ion-social-youtube"></i></span>
+                    </div>
+                    <div class="service-content">
+                        <h2 class="s-title">Anime</h2>
+                        <p class="s-description text-center">
+                            毎クール、3つ4つ追いかけています。漫画や小説に比べて気軽に見始めることができたり、ドラマと違って現実感をあまり感じないので気持ち的に楽に見ることができたり、とても自分に合っている媒体だなぁって思います！
+                        </p>
+                    </div>
+                </div>
+            </div>
 
-    </div>
-    <div class="row">
-        <div class="text-center col-sm-12 title-box">
-            <h5 class="title-a" style="color:#fff;">programming</h5>
-            <p class="subtitle-a" style="color:#fff;">技術領域</p>
-            <div class="line-mf"></div>
         </div>
-    </div>
-    <div class="container">
         <div class="row">
-            <div class="col-md-3 col-lg-3">
-                <div class="counter-box pt-4 pt-md-0">
-                    <div class="counter-ico">
+            <div class="text-center col-sm-12 title-box">
+                <h5 class="title-a" style="color:#fff;">programming</h5>
+                <p class="subtitle-a" style="color:#fff;">技術領域</p>
+                <div class="line-mf"></div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="justify-content-center row">
+                <div class="col-lg-3 col-lg-3">
+                    <div class="counter-box pt-4">
+                        <div class="counter-ico">
                         <span class="ico-circle" style="display:table;height:95px;width:95px;margin:0 auto;"><i
                                 class="ion-social-python" style="display:table-cell;text-align:center;
                                 vertical-align: middle;font-size:3.5rem;"></i></span>
-                    </div>
-                    <div class="counter-num">
-                        <p class="w-title">Python</p>
-                        <span class="counter">75</span>
-                        <span class="counter-text">%</span>
-                        <p>メインで扱っている言語です。本格的に触り始めてから1年位になります。webフレームワークはFlask、Djangoを使ったことがあります。</p>
+                        </div>
+                        <div class="counter-num">
+                            <p class="w-title">Python</p>
+                            <span class="counter">50</span>
+                            <span class="counter-text">%</span>
+                            <p>独学で始めた最初の言語だったり実際の業務の中でも扱ってきている部分もあったりするので、僕のなかでは一番馴染みが深い言語だと思っています。</p>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="col-md-3 col-lg-3">
-                <div class="counter-box pt-4 pt-md-0">
-                    <div class="counter-ico">
+                <div class="col-lg-3 col-lg-3">
+                    <div class="counter-box pt-4">
+                        <div class="counter-ico">
                         <span class="ico-circle" style="display:table;height:95px;width:95px;margin:0 auto;"><i
                                 class="ion-social-html5-outline" style="display:table-cell;text-align:center;
                                 vertical-align: middle;font-size:3.5rem;"></i></span>
-                    </div>
-                    <div class="counter-num">
-                        <p class="w-title">HTML</p>
-                        <span class="counter">32</span>
-                        <span class="counter-text">%</span>
-                        <p>基本的な部分が扱える程度です。今後、適宜学習して行くつもりです。</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3 col-lg-3">
-                <div class="counter-box pt-4 pt-md-0">
-                    <div class="counter-ico">
-                        <span class="ico-circle" style="display:table;height:95px;width:95px;margin:0 auto;"><i
-                                class="ion-social-css3-outline" style="display:table-cell;text-align:center;
-                                vertical-align: middle;font-size:3.5rem;"></i></span>
-                    </div>
-                    <div class="counter-num">
-                        <p class="w-title">CSS</p>
-                        <span class="counter">27</span>
-                        <span class="counter-text">%</span>
-                        <p>文字を編集したりサイズを編集するといった基本的なデザインを扱える程度です。</p>
+                        </div>
+                        <div class="counter-num">
+                            <p class="w-title">Ruby</p>
+                            <span class="counter">32</span>
+                            <span class="counter-text">%</span>
+                            <p>業務で扱う言語の中ではPythonの次に多いのではないかと思います。界隈的に <a class="text-primary"
+                                                                         href="https://twitter.com/ito_yusaku/status/1042604780718157824">"完全に理解した"</a>
+                                段階だと思います</p>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="col-md-3 col-lg-3">
-                <div class="counter-box pt-4 pt-md-0">
-                    <div class="counter-ico">
+                <div class="col-lg-3 col-lg-3">
+                    <div class="counter-box pt-4">
+                        <div class="counter-ico">
                         <span class="ico-circle" style="display:table;height:95px;width:95px;margin:0 auto;"><i
                                 class="ion-social-javascript" style="display:table-cell;text-align:center;
                                 vertical-align: middle;font-size:3.5rem;"></i></span>
 
+                        </div>
+                        <div class="counter-num">
+                            <p class="w-title">Javascript</p>
+                            <span class="counter">30</span>
+                            <span class="counter-text">%</span>
+                            <p>触ったことがある程度だと思っています。jQueryとReact.jsは触ったことがあります。</p>
+                        </div>
                     </div>
-                    <div class="counter-num">
-                        <p class="w-title">Javascript</p>
-                        <span class="counter">25</span>
-                        <span class="counter-text">%</span>
-                        <p>ホームページのアニメーションの制御をするために適宜扱っているといった程度です。</p>
+                </div>
+                <div class="col-lg-3 col-lg-3">
+                    <div class="counter-box pt-4">
+                        <div class="counter-ico">
+                        <span class="ico-circle" style="display:table;height:95px;width:95px;margin:0 auto;"><i
+                                class="ion-social-css3-outline" style="display:table-cell;text-align:center;
+                                vertical-align: middle;font-size:3.5rem;"></i></span>
+                        </div>
+                        <div class="counter-num">
+                            <p class="w-title">HTML/CSS</p>
+                            <span class="counter">27</span>
+                            <span class="counter-text">%</span>
+                            <p>業務で色々触っていますが、触れるくらいのレベルだと思います。レスポンシブを考えるのは苦手です。</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-lg-3">
+                    <div class="counter-box pt-4">
+                        <div class="counter-ico">
+                        <span class="ico-circle" style="display:table;height:95px;width:95px;margin:0 auto;"><i
+                                class="ion-social-css3-outline" style="display:table-cell;text-align:center;
+                                vertical-align: middle;font-size:3.5rem;"></i></span>
+                        </div>
+                        <div class="counter-num">
+                            <p class="w-title">その他</p>
+                            <p>Kotlin, MySQL, AWS等々</p>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-    <!--</div>-->
-</section>
-<!--/ Section Services End /-->
+    </section>
 
-<!--<div class="bg-image" style="background-image: url({% static 'img/load_bike.jpg' %})">-->
-<!--<div class="section-counter paralax-mf bg-image">-->
-<!--<div class="overlay-extend"></div>-->
-
-<!--</div>-->
-
-<!--/ Section Portfolio Star /-->
-<section id="products" class="portfolio-mf sect-pt4 route">
-    <div class="container">
-        <div class="row">
-            <div class="col-sm-12">
-                <div class="title-box text-center">
-                    <h3 class="title-a">
-                        Products
-                    </h3>
-                    <p class="subtitle-a">
-                        成果物・経験内容
-                    </p>
-                    <div class="line-mf"></div>
-                </div>
-            </div>
-        </div>
-        <div class="container products-box animated" style="display:none;" data-animate="slideInUp">
+    <section id="products" class="portfolio-mf sect-pt4 route">
+        <div class="container">
             <div class="row">
-                <div class="col-md-9" style="margin:0 auto;display:block">
-                    <div id="testimonial-mf" class="owl-carousel owl-theme">
-                        <div class="testimonial-box">
-                            <div class="work-box">
-                                <div class="work-img">
-                                    <img src="{% static 'img/pd-portfolio.png' %}" alt=""
-                                         class="img-fluid img-thumbnail" style="height:24rem;object-fit: cover;">
-                                </div>
-                                <div class="work-content">
-                                    <div class="row">
-                                        <div class="col-sm-12">
-                                            <h2 class="w-title">ポートフォリオ</h2>
-                                            <div class="w-more">
-                                                <span class="w-ctegory">Python / HTML / CSS / JS </span> <br> <span
-                                                    class="w-date">Feb. 2019</span>
-                                                <p>Djangoで作りましたが、作業の大半はHTML/CSSとJavascriptの部分でした。</p>
-                                            </div>
-                                        </div>
-                                        <!--<div class="col-sm-4">-->
-                                        <!--<div class="w-like">-->
-                                        <!--<span class="ion-ios-plus-outline"></span>-->
-                                        <!--</div>-->
-                                        <!--</div>-->
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="testimonial-box">
-                            <div class="work-box">
-                                <a>
+                <div class="col-sm-12">
+                    <div class="title-box text-center">
+                        <h3 class="title-a">
+                            Products
+                        </h3>
+                        <p class="subtitle-a">
+                            成果物・経験内容
+                        </p>
+                        <div class="line-mf"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="container products-box animated" style="display:none;" data-animate="slideInUp">
+                <div class="row">
+                    <div class="col-lg-9" style="margin:0 auto;display:block">
+                        <div id="testimonial-mf" class="owl-carousel owl-theme">
+                            <div class="testimonial-box">
+                                <div class="work-box">
                                     <div class="work-img">
-                                        <img src="{% static 'img/twi-search.png' %}" alt=""
+                                        <img src="{% static 'img/pd-portfolio.png' %}" alt=""
                                              class="img-fluid img-thumbnail" style="height:24rem;object-fit: cover;">
                                     </div>
                                     <div class="work-content">
                                         <div class="row">
                                             <div class="col-sm-12">
-                                                <h2 class="w-title">ツイッター検索 BOT</h2>
+                                                <h2 class="w-title">ポートフォリオ</h2>
                                                 <div class="w-more">
-                                                    <span class="w-ctegory">Python / Flask</span> <br> <span
-                                                        class="w-date">Dec. 2018</span>
-                                                    <p>LineメッセージングAPIを利用して、検索ワードからTwitterAPIで検索結果を返答してくれるBOTです。flex
-                                                        messageで返答のデザインを操作できて便利でした。</p>
+                                                    <span class="w-ctegory">Python / HTML / CSS / JS </span> <br> <span
+                                                        class="w-date">Feb. 2019</span>
+                                                    <p>Djangoで作りましたが、作業の大半はHTML/CSSとJavascriptの部分でした。</p>
                                                 </div>
                                             </div>
-                                            <!--<div class="col-sm-4">-->
-                                            <!--<div class="w-like">-->
-                                            <!--<span class="ion-ios-plus-outline"></span>-->
-                                            <!--</div>-->
-                                            <!--</div>-->
                                         </div>
                                     </div>
-                                </a>
+                                </div>
                             </div>
-                        </div>
-                        <div class="testimonial-box">
-                            <div class="work-box">
-                                <a>
-                                    <div class="work-img">
-                                        <img src="{% static 'img/mercari.png' %}" alt=""
-                                             class="img-fluid img-thumbnail" style="height:24rem;object-fit: cover;">
-                                    </div>
-                                    <div class="work-content">
-                                        <div class="row">
-                                            <div class="col-sm-12">
-                                                <h2 class="w-title">メルカリ 値段分析</h2>
-                                                <div class="w-more">
-                                                    <span class="w-ctegory">Python</span> <br> <span
-                                                        class="w-date">Nov. 2018</span>
-                                                    <p>スクレイピングで収集したメルカリのサイトから売られている商品の情報を使用して分析しました。</p>
+                            <div class="testimonial-box">
+                                <div class="work-box">
+                                    <a>
+                                        <div class="work-img">
+                                            <img src="{% static 'img/twi-search.png' %}" alt=""
+                                                 class="img-fluid img-thumbnail"
+                                                 style="height:24rem;object-fit: cover;">
+                                        </div>
+                                        <div class="work-content">
+                                            <div class="row">
+                                                <div class="col-sm-12">
+                                                    <h2 class="w-title">ツイッター検索 BOT</h2>
+                                                    <div class="w-more">
+                                                        <span class="w-ctegory">Python / Flask</span> <br> <span
+                                                            class="w-date">Dec. 2018</span>
+                                                        <p>LineメッセージングAPIを利用して、検索ワードからTwitterAPIで検索結果を返答してくれるBOTです。flex
+                                                            messageで返答のデザインを操作できて便利でした。</p>
+                                                    </div>
                                                 </div>
                                             </div>
-                                            <!--<div class="col-sm-4">-->
-                                            <!--<div class="w-like">-->
-                                            <!--<span class="ion-ios-plus-outline"></span>-->
-                                            <!--</div>-->
-                                            <!--</div>-->
                                         </div>
-                                    </div>
-                                </a>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="testimonial-box">
+                                <div class="work-box">
+                                    <a>
+                                        <div class="work-img">
+
+                                        </div>
+                                        <div class="work-content">
+                                            <div class="row">
+                                                <div class="col-sm-12">
+                                                    <h2 class="w-title">作成中</h2>
+                                                    <div class="w-more">
+                                                        <span class="w-ctegory"></span> <br> <span
+                                                            class="w-date"></span>
+                                                        <p>今後追加予定</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+
         </div>
-
-    </div>
-</section>
-<!--/ Section Portfolio End /-->
+    </section>
+    <!--/ Section Portfolio End /-->
 
 
-<!--/ Section Contact-Footer Star /-->
-<section class="paralax-mf footer-paralax bg-image sect-mt4 route"
-         style="background-image: url({% static 'img/ball.jpg' %})">
-    <div class="overlay-extend"></div>
-    <div class="container">
-        <div class="row">
-            <div class="col-sm-12">
-                <div class="contact-mf">
-                    <div id="contact" class="box-shadow-full">
-                        <div class="row">
-                            <div class="col-md-12">
-                                <div class="title-box-2 text-center">
-                                    <h5 class="title-a">
-                                        Contact
-                                    </h5>
-                                    <p class="subtitle-a">
-                                        お問い合わせ
-                                    </p>
-                                    <div class="line-mf"></div>
-                                </div>
-
-
-                                <p></p>
-                                <div class="col-md-12">
-                                    <div class="title-box-2 pt-4 pt-md-0">
-                                        <h5 class="title-left">
-                                            Send me
+    <!--/ Section Contact-Footer Star /-->
+    <section class="paralax-mf footer-paralax bg-image sect-mt4 route"
+             style="background-image: url({% static 'img/ball.jpg' %})">
+        <div class="overlay-extend"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="contact-mf">
+                        <div id="contact" class="box-shadow-full">
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <div class="title-box-2 text-center">
+                                        <h5 class="title-a">
+                                            Contact
                                         </h5>
-                                        <p></p>
-                                        <p></p>
-                                        <span>気軽に連絡してください！！</span>
+                                        <p class="subtitle-a">
+                                            お問い合わせ
+                                        </p>
+                                        <div class="line-mf"></div>
                                     </div>
 
-                                    <form action="" method="post" role="form" class="contactForm"
-                                          enctype='multipart/form-data'>
-                                        {% csrf_token %}
-                                        <div id="sendmessage">Your message has been sent. Thank you!</div>
-                                        <div id="errormessage">An error occurred.</div>
-                                        <div class="row">
-                                            <div class="col-md-12 mb-3">
-                                                <div class="form-group">
-                                                    <input type="text" name="name" class="form-control" id="name"
-                                                           placeholder="Your Name" data-rule="minlen:4"
-                                                           data-msg="Please enter at least 4 chars" required/>
-                                                    <div class="error-message error-message-name text-danger"
-                                                         style="display:none;">
-                                                        <p class="">入力に不備があります。</p>
+
+                                    <p></p>
+                                    <div class="col-lg-12">
+                                        <div class="title-box-2 pt-4 pt-md-0">
+                                            <h5 class="title-left">
+                                                Send me
+                                            </h5>
+                                            <p></p>
+                                            <p></p>
+                                            <span>気軽に連絡してください！！</span>
+                                        </div>
+
+                                        <form action="" method="post" role="form" class="contactForm"
+                                              enctype='multipart/form-data'>
+                                            {% csrf_token %}
+                                            <div id="sendmessage">Your message has been sent. Thank you!</div>
+                                            <div id="errormessage">An error occurred.</div>
+                                            <div class="row">
+                                                <div class="col-lg-12 mb-3">
+                                                    <div class="form-group">
+                                                        <input type="text" name="name" class="form-control" id="name"
+                                                               placeholder="Your Name" data-rule="minlen:4"
+                                                               data-msg="Please enter at least 4 chars" required/>
+                                                        <div class="error-message error-message-name text-danger"
+                                                             style="display:none;">
+                                                            <p class="">入力に不備があります。</p>
+                                                        </div>
                                                     </div>
                                                 </div>
-                                            </div>
-                                            <div class="col-md-12 mb-3">
-                                                <div class="form-group">
-                                                    <input type="email" class="form-control" name="email" id="email"
-                                                           placeholder="Your Email" data-rule="email"
-                                                           data-msg="Please enter a valid email" required/>
-                                                    <div class="error-message error-message-email text-danger"
-                                                         style="display:none;">
-                                                        <p class="">入力に不備があります。</p>
+                                                <div class="col-lg-12 mb-3">
+                                                    <div class="form-group">
+                                                        <input type="email" class="form-control" name="email" id="email"
+                                                               placeholder="Your Email" data-rule="email"
+                                                               data-msg="Please enter a valid email" required/>
+                                                        <div class="error-message error-message-email text-danger"
+                                                             style="display:none;">
+                                                            <p class="">入力に不備があります。</p>
+                                                        </div>
                                                     </div>
                                                 </div>
-                                            </div>
-                                            <div class="col-md-12 mb-3">
-                                                <div class="form-group">
-                                                    <input type="text" class="form-control" name="subject" id="subject"
-                                                           placeholder="Subject" data-rule="minlen:4"
-                                                           data-msg="Please enter at least 8 chars of subject"
-                                                           required/>
-                                                    <div class="error-message error-message-subject text-danger"
-                                                         style="display:none;">
-                                                        <p class="">入力に不備があります。</p>
+                                                <div class="col-lg-12 mb-3">
+                                                    <div class="form-group">
+                                                        <input type="text" class="form-control" name="subject"
+                                                               id="subject"
+                                                               placeholder="Subject" data-rule="minlen:4"
+                                                               data-msg="Please enter at least 8 chars of subject"
+                                                               required/>
+                                                        <div class="error-message error-message-subject text-danger"
+                                                             style="display:none;">
+                                                            <p class="">入力に不備があります。</p>
+                                                        </div>
                                                     </div>
                                                 </div>
-                                            </div>
-                                            <div class="col-md-12 mb-3">
-                                                <div class="form-group">
+                                                <div class="col-lg-12 mb-3">
+                                                    <div class="form-group">
                                                     <textarea class="form-control" name="message" id="message" rows="5"
                                                               data-rule="required"
                                                               data-msg="Please write something for us"
                                                               placeholder="Message" required></textarea>
-                                                    <div class="error-message error-message-message text-danger"
-                                                         style="display:none;">
-                                                        <p class="">入力に不備があります。</p>
+                                                        <div class="error-message error-message-message text-danger"
+                                                             style="display:none;">
+                                                            <p class="">入力に不備があります。</p>
+                                                        </div>
                                                     </div>
                                                 </div>
-                                            </div>
 
-                                            <div class="col-md-12">
-                                                <div id="screenLock" style="visibility: hidden;"></div>
-                                                <button type="button" class="button button-a button-big button-rouded"
-                                                        id="submit-button"
-                                                        style="margin:0 auto;display:block;">
-                                                    Send Message
-                                                </button>
+                                                <div class="col-lg-12">
+                                                    <div id="screenLock" style="visibility: hidden;"></div>
+                                                    <button type="button"
+                                                            class="button button-a button-big button-rouded"
+                                                            id="submit-button"
+                                                            style="margin:0 auto;display:block;">
+                                                        Send Message
+                                                    </button>
+                                                </div>
                                             </div>
-                                        </div>
-                                    </form>
+                                        </form>
+                                    </div>
+
                                 </div>
-
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-    <div class="row justify-content-center">
-        <div class="socials col-7" style="margin:10px auto;">
-            <div class="text-center">
-                <h5 class="title-a text-white">
-                    Accounts
-                </h5>
-                <p class="subtitle-a text-white" style="font-size: 1.5rem;">
-                    Follow me!!
-                </p>
+        <div class="row justify-content-center">
+            <div class="socials col-7" style="margin:10px auto;">
+                <div class="text-center">
+                    <h5 class="title-a text-white">
+                        Accounts
+                    </h5>
+                    <p class="subtitle-a text-white" style="font-size: 1.5rem;">
+                        Follow me!!
+                    </p>
+                </div>
+                <p></p>
+                <ul class="row">
+                    <li class="col" style="margin:10px auto;">
+                        <a class="ico-circle" href="{{ facebook }}"
+                           style="display:table;height:95px;width:95px;margin:0 auto;" target="_blank" ;>
+                            <i class="ion-social-facebook" style="display:table-cell;font-size:2.5em;text-align:center;
+                                vertical-align: middle;"></i>
+                        </a>
+                    </li>
+                    <li class="col" style="margin:10px auto;">
+                        <a class="ico-circle" href="{{ twitter }}"
+                           style="display:table;height:95px;width:95px;margin:0 auto;" target="_blank" ;>
+                            <i class="ion-social-twitter" style="display:table-cell;font-size:2.5em;text-align:center;
+                                vertical-align: middle;"></i>
+                        </a>
+                    </li>
+                    <li class="col" style="margin:10px auto;">
+                        <a class="ico-circle" href="{{ github }}"
+                           style="display:table;height:95px;width:95px;margin:0 auto;" target="_blank" ;>
+                            <i class="ion-social-github" style="display:table-cell;font-size:2.5em;text-align:center;
+                                vertical-align: middle;"></i>
+                        </a>
+                    </li>
+                </ul>
+                <div>&emsp;</div>
+                <p class="text-white text-center" style="font-size:20px;font-weight:bold;">
+                    よろしくおねがいします！！！</p>
             </div>
-            <p></p>
-            <ul class="row">
-                <li class="col" style="margin:10px auto;">
-                    <a class="ico-circle" href="{{ facebook }}"
-                       style="display:table;height:95px;width:95px;margin:0 auto;" target="_blank" ;>
-                        <i class="ion-social-facebook" style="display:table-cell;font-size:2.5em;text-align:center;
-                                vertical-align: middle;"></i>
-                    </a>
-                </li>
-                <li class="col" style="margin:10px auto;">
-                    <a class="ico-circle" href="{{ twitter }}"
-                       style="display:table;height:95px;width:95px;margin:0 auto;" target="_blank" ;>
-                        <i class="ion-social-twitter" style="display:table-cell;font-size:2.5em;text-align:center;
-                                vertical-align: middle;"></i>
-                    </a>
-                </li>
-                <li class="col" style="margin:10px auto;">
-                    <a class="ico-circle" href="{{ github }}"
-                       style="display:table;height:95px;width:95px;margin:0 auto;" target="_blank" ;>
-                        <i class="ion-social-github" style="display:table-cell;font-size:2.5em;text-align:center;
-                                vertical-align: middle;"></i>
-                    </a>
-                </li>
-            </ul>
-            <div>&emsp;</div>
-            <p class="text-white text-center" style="font-size:20px;font-weight:bold;">
-                よろしくおねがいします！！！</p>
         </div>
-    </div>
-</section>
-{%endblock%}
+    </section>
+{% endblock %}
